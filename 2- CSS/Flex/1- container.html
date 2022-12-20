@@ -16,18 +16,25 @@
         .container {
             display: flex;
             background-color: paleturquoise;
-            /* flex-direction: row; */
-            justify-content: space-around;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-start;
             /* flex-wrap: wrap; */
-            flex-flow: column wrap;
+            /* flex-flow: row wrap; */
             height: 100%;
+            /* justify-content: space-between;
+            align-items: center; */
         }
         
         .container div {
             background-color: darkblue;
-            width: 20%;
+            width: 200px;
             height: 200px;
-            margin: 50px;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin: 5px;
             /* margin-right: 0; */
             color: white;
             text-align: center;
@@ -43,10 +50,10 @@
         <div>Item 3</div>
         <div>Item 4</div>
         <div>Item 5</div>
-        <div>Item 6 </div>
+        <!-- <div>Item 6 </div>
         <div>Item 7</div>
         <div>Item 8</div>
-        <div>Item 9</div>
+        <div>Item 9</div> -->
         <!-- <div>Item 10</div> -->
 
     </div>

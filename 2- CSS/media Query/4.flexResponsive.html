@@ -22,19 +22,25 @@
         .flex-item-left {
             background-color: #f1f1f1;
             padding: 10px;
-            flex: 50%;
+            flex: 100%;
         }
         
         .flex-item-right {
             background-color: dodgerblue;
             padding: 10px;
-            flex: 50%;
+            flex: 100%;
         }
         /* Responsive layout - makes a one column-layout instead of two-column layout */
         
         @media (min-width: 800px) {
             .flex-container {
                 flex-direction: row;
+            }
+            .flex-item-right {
+                flex: 50%;
+            }
+            .flex-item-left {
+                flex: 50%;
             }
         }
     </style>
